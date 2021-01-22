@@ -17,6 +17,7 @@ table{
     margin-right: 30%;
     margin-top: 3%;
     height: 40vw;
+    width:45vw;
     bottom: 70px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     border: black , solid ;
@@ -25,6 +26,7 @@ table{
     border-style: groove;
     background-color: rgb(24, 228, 228);
     font-size: 1.1em;
+    
 }
 
 
