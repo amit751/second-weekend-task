@@ -76,6 +76,15 @@ const mainarr = [
 const table = document.createElement("table");
 let body = document.getElementsByTagName("body");
 document.body.append(table);
+
+//creating the tables head:
+let tableRow = document.createElement("tr");
+table.append(tableRow);
+for (const prop in mainarr[0]) {
+   let tableHead = document.createElement("th");
+   tableHead.textContent = prop;
+   tableRow.append(tableHead);
+}
 // const tableRow = document.createElement("tr");
 // const tableSection = document.createElement("td");
 // table.append(tableRow);
