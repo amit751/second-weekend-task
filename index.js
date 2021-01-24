@@ -122,13 +122,28 @@ for(let i=0;i<mainarr.length;i++){
 let dynamicProps1 = document.getElementsByClassName("addcolor1");
 console.log(dynamicProps1);
 for (const dynamicProp1 of dynamicProps1) {
-    if(Number(dynamicProp1.innerText)<5){
+    if(Number(dynamicProp1.innerText)>0 && Number(dynamicProp1.innerText)<30 ){
+        dynamicProp1.classList.add("redColor");  
+    }else if(Number(dynamicProp1.innerText)>30 && Number(dynamicProp1.innerText)<100 ){
+        dynamicProp1.classList.add("orangeColor");  
+    }else if(Number(dynamicProp1.innerText)>100 && Number(dynamicProp1.innerText)<180 ){
         dynamicProp1.classList.add("greenColor");  
     }
+
 }
 console.log(dynamicProps1);
 
 let dynamicProps2 = document.getElementsByClassName("addcolor2");
+for (const dynamicProp2 of dynamicProps2) {
+    if(Number(dynamicProp2.innerText)>0 && Number(dynamicProp2.innerText)<20 ){
+        dynamicProp2.classList.add("blueColor");  
+    }else if(Number(dynamicProp2.innerText)>20 && Number(dynamicProp2.innerText)<40 ){
+        dynamicProp2.classList.add("aquaColor");  
+    }else{
+        dynamicProp2.classList.add("perpulColor");  
+    }
+
+}
 console.log(dynamicProps2);
 
 

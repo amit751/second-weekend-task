@@ -66,5 +66,21 @@ html{
     background-color: rgb(19, 108, 209);
 } */
 .greenColor{
-    background-color: chartreuse;
+    background-color: rgba(27, 228, 37, 0.781);
+}
+.orangeColor{
+    background-color: hsl(16, 85%, 50%);
+
+}
+.redColor{
+    background-color: rgb(226, 26, 26);
+}
+.perpulColor{
+    background-color: rgb(170, 70, 170);
+}
+.aquaColor{
+    background-color: aqua;
+}
+.blueColor{
+    background-color: blue;
 }
