@@ -134,7 +134,7 @@ for (const dynamicProp1 of dynamicProps1) {
     }
 
 }
-const presentSing ="%";
+
 
 //collecting all td elements reffering to "tasks precent" property
 let dynamicProps2 = document.getElementsByClassName("addcolor2");
@@ -149,10 +149,10 @@ for (const dynamicProp2 of dynamicProps2) {
     }
 
 }
+const presentSing ="%";
 for (const td of dynamicProps2) {
     td.append(presentSing);
 }
-// dynamicProps2.forEach(element.append(presentSing));
 
 
 
