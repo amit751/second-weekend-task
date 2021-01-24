@@ -96,10 +96,16 @@ for (const prop in mainarr[0]) {
 function addrowes(object){
     let tableRow = document.createElement("tr");
     table.append(tableRow);
+    let count = 0;
     for (const prop in object) {
         let tableSection = document.createElement("td");
         tableSection.textContent= object[prop];
         tableRow.append(tableSection);
+        // count++;
+        if(count===5||count===6){
+            tableSection.className= "addcolor";  
+        }
+        count++;
 
     }
 }
@@ -108,6 +114,8 @@ function addrowes(object){
 for(let i=0;i<mainarr.length;i++){
     addrowes(mainarr[i]); 
 }
+
+
 
 
 

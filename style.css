@@ -1,4 +1,4 @@
-table * {
+/* table * {
     text-align: center;
     border: black solid  ;
     margin-left: 30%;
@@ -58,4 +58,7 @@ html{
 }
 .color3{
     background-color: #399c20d0;
+} */
+.addcolor{
+    background-color: blueviolet;
 }
