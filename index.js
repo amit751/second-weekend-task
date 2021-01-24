@@ -73,52 +73,72 @@ const mainarr = [
     } 
 ];
 
+const table = document.createElement("table");
+body.append(table);
 
-//calculete the additional properties and put them inside all object
-for (const obj of mainarr) {
-    obj.totalTime = Math.round((obj.finishedAt-obj.startedAt)/3600000);
-    obj.tasksFinishedPrecent=Math.floor((obj.tasksFinished/obj.tasksGiven)*100) ;
-    
-}
-//creating the title of the colums
-document.write('<h1>destenations</h1>');
-document.write('<table>');
-document.write('<th> started At </th>');
-document.write('<th> Finished At </th>');
-document.write('<th> Tasks Given </th>');
-document.write('<th> Tasks Finishd </th>');
-document.write('<th> Topic </th>');
-document.write('<th> Total Time  </th>');
-document.write('<th> Tasks % </th>');
 
-//creating the body of the table
-for (const obj of mainarr) {
-    document.write("<tr>");
-    document.write("<td>" + obj.startedAt + "</td>");
-    document.write("<td>" + obj.finishedAt + "</td>");
-    document.write("<td>" + obj.tasksGiven + "</td>");
-    document.write("<td>" + obj.tasksFinished + "</td>");
-    document.write("<td>" + obj.topic + "</td>");
-    if(obj.totalTime>0 && obj.totalTime<30){
-        document.write('<td class= "colora">' + obj.totalTime + "</td>");
-    }else if(obj.totalTime>30 && obj.totalTime<100){
-        document.write('<td class= "colorb">' + obj.totalTime + "</td>");
-    }else{
-        document.write('<td class= "colorg">' + obj.totalTime + "</td>");
-    }
-    if(obj.tasksFinishedPrecent>0 && obj.tasksFinishedPrecent<20){
-        document.write('<td class= "color1">' + obj.tasksFinishedPrecent + "%</td>");
-    }else if(obj.tasksFinishedPrecent<40 && obj.tasksFinishedPrecent>20){
-        document.write('<td class= "color2">' + obj.tasksFinishedPrecent + "%</td>");
-    }else{
-        document.write('<td class= "color3">' + obj.tasksFinishedPrecent + "%</td>");
-    }
-    document.write("</tr>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //calculete the additional properties and put them inside all object
+// for (const obj of mainarr) {
+//     obj.totalTime = Math.round((obj.finishedAt-obj.startedAt)/3600000);
+//     obj.tasksFinishedPrecent=Math.floor((obj.tasksFinished/obj.tasksGiven)*100) ;
+    
+// }
+// //creating the title of the colums
+// document.write('<h1>destenations</h1>');
+// document.write('<table>');
+// document.write('<th> started At </th>');
+// document.write('<th> Finished At </th>');
+// document.write('<th> Tasks Given </th>');
+// document.write('<th> Tasks Finishd </th>');
+// document.write('<th> Topic </th>');
+// document.write('<th> Total Time  </th>');
+// document.write('<th> Tasks % </th>');
+
+// //creating the body of the table
+// for (const obj of mainarr) {
+//     document.write("<tr>");
+//     document.write("<td>" + obj.startedAt + "</td>");
+//     document.write("<td>" + obj.finishedAt + "</td>");
+//     document.write("<td>" + obj.tasksGiven + "</td>");
+//     document.write("<td>" + obj.tasksFinished + "</td>");
+//     document.write("<td>" + obj.topic + "</td>");
+//     if(obj.totalTime>0 && obj.totalTime<30){
+//         document.write('<td class= "colora">' + obj.totalTime + "</td>");
+//     }else if(obj.totalTime>30 && obj.totalTime<100){
+//         document.write('<td class= "colorb">' + obj.totalTime + "</td>");
+//     }else{
+//         document.write('<td class= "colorg">' + obj.totalTime + "</td>");
+//     }
+//     if(obj.tasksFinishedPrecent>0 && obj.tasksFinishedPrecent<20){
+//         document.write('<td class= "color1">' + obj.tasksFinishedPrecent + "%</td>");
+//     }else if(obj.tasksFinishedPrecent<40 && obj.tasksFinishedPrecent>20){
+//         document.write('<td class= "color2">' + obj.tasksFinishedPrecent + "%</td>");
+//     }else{
+//         document.write('<td class= "color3">' + obj.tasksFinishedPrecent + "%</td>");
+//     }
+//     document.write("</tr>");
 
     
     
-}
-document.write('</table>');
+// }
+// document.write('</table>');
 
 
 
