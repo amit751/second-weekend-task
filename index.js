@@ -101,9 +101,11 @@ function addrowes(object){
         let tableSection = document.createElement("td");
         tableSection.textContent= object[prop];
         tableRow.append(tableSection);
-        // count++;
-        if(count===5||count===6){
-            tableSection.className= "addcolor";  
+        if(count===5){
+            tableSection.className= "addcolor1";  
+        }
+        if (count === 6){
+            tableSection.className= "addcolor2";
         }
         count++;
 
@@ -116,7 +118,8 @@ for(let i=0;i<mainarr.length;i++){
 }
 
 
-
+let dynamicProps = document.getElementsByClassName("addcolor");
+console.log(dynamicProps);
 
 
 
