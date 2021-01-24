@@ -134,3 +134,16 @@
 // }else{
 //     document.write('<td class= "colorg">' + obj.tasksFinishedPrecent + "</td>");
 // }
+const myObj=
+{
+    startedAt:  new Date("2021-01-21:13:00"),
+    finishedAt: new Date("2021-01-21:17:00"),
+    tasksGiven: 89 ,
+    tasksFinished: 15 ,
+    topic: "HTML" ,
+    totalTime: (this.tasksGiven-this.tasksFinished) ,
+    tasksFinishedPrecent: Math.round((this.finishedAt-this.startedAt)/3600000)
+    
+
+    
+} ;

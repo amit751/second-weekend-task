@@ -77,6 +77,12 @@ const table = document.createElement("table");
 let body = document.getElementsByTagName("body");
 document.body.append(table);
 
+//calculete the additional properties and put them inside all object
+for (const obj of mainarr) {
+    obj.totalTime = Math.round((obj.finishedAt-obj.startedAt)/3600000);
+    obj.tasksFinishedPrecent=Math.floor((obj.tasksFinished/obj.tasksGiven)*100) ;
+}    
+
 //creating the tables head:
 let tableRow = document.createElement("tr");
 table.append(tableRow);
@@ -85,15 +91,8 @@ for (const prop in mainarr[0]) {
    tableHead.textContent = prop;
    tableRow.append(tableHead);
 }
-// const tableRow = document.createElement("tr");
-// const tableSection = document.createElement("td");
-// table.append(tableRow);
-// tableRow.append(tableSection);
-// tableSection.innerText="djsfhgdf";
 
-
-
-
+//function for adding a singel row
 function addrowes(object){
     let tableRow = document.createElement("tr");
     table.append(tableRow);
@@ -105,8 +104,7 @@ function addrowes(object){
     }
 }
 
-
-
+//adding all rows
 for(let i=0;i<mainarr.length;i++){
     addrowes(mainarr[i]); 
 }
@@ -124,12 +122,12 @@ for(let i=0;i<mainarr.length;i++){
 
 
 
-// //calculete the additional properties and put them inside all object
+//calculete the additional properties and put them inside all object
 // for (const obj of mainarr) {
 //     obj.totalTime = Math.round((obj.finishedAt-obj.startedAt)/3600000);
 //     obj.tasksFinishedPrecent=Math.floor((obj.tasksFinished/obj.tasksGiven)*100) ;
     
-// }
+// // }
 // //creating the title of the colums
 // document.write('<h1>destenations</h1>');
 // document.write('<table>');
