@@ -1,88 +1,32 @@
-/* table * {
-    text-align: center;
-    border: black solid  ;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: rgb(69, 224, 134);
-}
-th{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    color: white;
+
+html{
+    background-color: rgb(211, 205, 205);
 }
 
-
-table{
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 3%;
-    height: 40vw;
-    width:45vw;
-    bottom: 70px;
-    font-family: 
-    border: black , solid ;
-    padding: 60px;
-    border-radius: 20%;
-    border-style: groove;
-    background-color: rgb(24, 228, 228);
-    font-size: 1.1em;
-    
-}
-
-
-.colora{
-    background-color: rgb(162, 28, 214);
-}
-
-.colorb{
-    background-color: rgb(77, 18, 214);
-}
-.colorg{
-    background-color: #2b37ebd0;
-}
 h1{
-    margin-bottom: 0%;
+    
     text-align: center;
     font-family: cursive;
-    color: darkblue;
+    color: rgb(236, 25, 155);
 }
-html{
-    background-color:darkorange;
-}
-.color1{
-    background-color: rgb(150, 247, 25);
-}
-
-.color2{
-    background-color: rgb(238, 34, 27);
-}
-.color3{
-    background-color: #399c20d0;
-} */
-/* .addcolor1{
-    background-color: blueviolet;
-}
-.addcolor2{
-    background-color: rgb(19, 108, 209);
-} */
 .greenColor{
-    background-color: rgba(27, 228, 37, 0.781);
+    background-color: rgba(136, 233, 141, 0.781);
 }
 .orangeColor{
-    background-color: hsl(16, 85%, 50%);
+    background-color: hsl(16, 72%, 65%);
 
 }
 .redColor{
-    background-color: rgb(226, 26, 26);
+    background-color: rgb(214, 97, 97);
 }
 .perpulColor{
-    background-color: rgb(170, 70, 170);
+    background-color: rgb(211, 134, 211);
 }
 .aquaColor{
-    background-color: aqua;
+    background-color: rgb(91, 207, 207);
 }
 .blueColor{
-    background-color: blue;
+    background-color: rgb(86, 86, 223);
 }
 table{
     text-align: center;
@@ -92,18 +36,19 @@ table{
     margin: auto;
     margin-top: 100px;
     border: rgb(231, 68, 223) solid;
-    border-radius: 20px; 
-    padding: 4px;
+    border-radius: 40px; 
+    padding: 25px;
+    background-color: white;
 }
 body{
     
     text-align: center;
 }
 th{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
-    
-    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: white;
+    color: rgb(3, 3, 3);
+    font-size: x-large;
 }
 td{
     background-color: coral;

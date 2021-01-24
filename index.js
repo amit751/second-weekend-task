@@ -73,6 +73,9 @@ const mainarr = [
     } 
 ];
 
+const h1 = document.createElement("h1");
+h1.innerText="buliding new table using dom manipulation :)";
+document.body.append(h1);
 
 const table = document.createElement("table");
 let body = document.getElementsByTagName("body");
