@@ -73,6 +73,7 @@ const mainarr = [
     } 
 ];
 
+
 const table = document.createElement("table");
 let body = document.getElementsByTagName("body");
 document.body.append(table);
@@ -118,8 +119,18 @@ for(let i=0;i<mainarr.length;i++){
 }
 
 
-let dynamicProps = document.getElementsByClassName("addcolor");
-console.log(dynamicProps);
+let dynamicProps1 = document.getElementsByClassName("addcolor1");
+console.log(dynamicProps1);
+for (const dynamicProp1 of dynamicProps1) {
+    if(Number(dynamicProp1.innerText)<5){
+        dynamicProp1.classList.add("greenColor");  
+    }
+}
+console.log(dynamicProps1);
+
+let dynamicProps2 = document.getElementsByClassName("addcolor2");
+console.log(dynamicProps2);
+
 
 
 
