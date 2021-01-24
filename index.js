@@ -74,12 +74,33 @@ const mainarr = [
 ];
 
 const table = document.createElement("table");
-body.append(table);
+let body = document.getElementsByTagName("body");
+document.body.append(table);
+// const tableRow = document.createElement("tr");
+// const tableSection = document.createElement("td");
+// table.append(tableRow);
+// tableRow.append(tableSection);
+// tableSection.innerText="djsfhgdf";
 
 
 
 
+function addrowes(object){
+    let tableRow = document.createElement("tr");
+    table.append(tableRow);
+    for (const prop in object) {
+        let tableSection = document.createElement("td");
+        tableSection.textContent= object[prop];
+        tableRow.append(tableSection);
 
+    }
+}
+
+
+
+for(let i=0;i<mainarr.length;i++){
+    addrowes(mainarr[i]); 
+}
 
 
 
