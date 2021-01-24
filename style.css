@@ -19,7 +19,7 @@ table{
     height: 40vw;
     width:45vw;
     bottom: 70px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 
     border: black , solid ;
     padding: 60px;
     border-radius: 20%;
@@ -83,4 +83,33 @@ html{
 }
 .blueColor{
     background-color: blue;
+}
+table{
+    text-align: center;
+    width: 50%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    border: rgb(231, 68, 223) solid;
+    border-radius: 20px; 
+    padding: 4px;
+}
+body{
+    
+    text-align: center;
+}
+th{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    
+    color: white;
+}
+td{
+    background-color: coral;
+    color: rgb(3, 0, 0);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: larger;
+    border: black solid;
+    border-radius: 15px;
 }

@@ -93,7 +93,7 @@ for (const prop in mainarr[0]) {
    tableRow.append(tableHead);
 }
 
-//function for adding a singel row
+//function for adding a singel row + adding classes to properties i want to change their color.
 function addrowes(object){
     let tableRow = document.createElement("tr");
     table.append(tableRow);
@@ -118,9 +118,9 @@ for(let i=0;i<mainarr.length;i++){
     addrowes(mainarr[i]); 
 }
 
-
+//collecting all td elements reffering to "total time" property
 let dynamicProps1 = document.getElementsByClassName("addcolor1");
-console.log(dynamicProps1);
+//conditions for  "total time" property
 for (const dynamicProp1 of dynamicProps1) {
     if(Number(dynamicProp1.innerText)>0 && Number(dynamicProp1.innerText)<30 ){
         dynamicProp1.classList.add("redColor");  
@@ -131,9 +131,10 @@ for (const dynamicProp1 of dynamicProps1) {
     }
 
 }
-console.log(dynamicProps1);
 
+//collecting all td elements reffering to "tasks precent" property
 let dynamicProps2 = document.getElementsByClassName("addcolor2");
+//conditions for  "tasks precent" property
 for (const dynamicProp2 of dynamicProps2) {
     if(Number(dynamicProp2.innerText)>0 && Number(dynamicProp2.innerText)<20 ){
         dynamicProp2.classList.add("blueColor");  
@@ -144,7 +145,9 @@ for (const dynamicProp2 of dynamicProps2) {
     }
 
 }
-console.log(dynamicProps2);
+
+
+
 
 
 
